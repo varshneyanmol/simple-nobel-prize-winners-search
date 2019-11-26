@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nobel Prize Laureate Search</title>
+    <style>
+        button {
+            color: black;
+            border: 2px solid #f44336;
+            padding: 15px 32px;
+            text-align: center;
+        }
+
+        input[type=text] {
+            width: 30%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <form onsubmit="event.preventDefault(); searchWinnerByName();">
+        <label for="name">Enter laureate name to search: </label>
+        <input id="name" type="text" placeholder="enter name">
+        <button type="submit">Search</button>
+    </form>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Year</th>
+            <th>Field</th>
+            <th>Country</th>
+            <th>Laureates</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
